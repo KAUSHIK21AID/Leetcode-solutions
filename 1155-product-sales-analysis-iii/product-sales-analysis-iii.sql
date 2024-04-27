@@ -5,3 +5,5 @@ WHERE (s.product_id, year) in
 (SELECT product_id, min(year) as y
 FROM Sales
 GROUP BY product_id)
+
+#subquery
