@@ -25,6 +25,7 @@ class Solution {
                 st.push(s.charAt(i));
             }
         }
+        System.out.println(ans);
         return ans + secondremoval(st,gain2,first,second);
     }
     public int secondremoval(Stack<Character>st, int gain2, char first, char second)
@@ -34,11 +35,9 @@ class Solution {
         // {
         //     if(st.peek()==first)
         //     {
-
-        //         st.pop();
+        //         char cc = st.pop();
         //         if(!st.isEmpty() && st.peek()==second)
         //         {
-        //             st.pop();
         //             ans = ans + gain2;
         //         }
         //     }
