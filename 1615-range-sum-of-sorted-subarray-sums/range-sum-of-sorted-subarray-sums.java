@@ -14,9 +14,10 @@ class Solution {
         }
         Collections.sort(sums);
         int anssum=0;
+        int m = (int)(Math.pow(10,9)+7);
         for(int i=left-1;i<right;i++)
         {
-            anssum = (anssum + sums.get(i))%(int)(Math.pow(10,9)+7);
+            anssum = (anssum + sums.get(i))%m;
         }
         return anssum;
         
